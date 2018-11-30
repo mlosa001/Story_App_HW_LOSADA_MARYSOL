@@ -1,3 +1,7 @@
 <resources>
+
     <string name="app_name">STORY_HW</string>
+    <string name="button_toast">Next</string>
+    <string name="toast_message">woo</string>
+
 </resources>

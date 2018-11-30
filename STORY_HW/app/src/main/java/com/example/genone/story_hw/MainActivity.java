@@ -4,6 +4,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -13,18 +14,49 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
 
-        final Button button = findViewById(R.id.button_next);
-        button.setOnClickListener(new View.OnClickListener() {
-            public void onClick(View v) {
-
-
-\            }
-        });
+//        final Button button = findViewById(R.id.button_next);
+//        button.setOnClickListener(new View.OnClickListener() {
+//            public void onClick(View v) {
+//                    Toast toast = Toast.makeText(this, R.string.toast_message, Toast.LENGTH_SHORT);
+//                    toast.show();
+//
+//
+//          }
+//        });
     }
 
 
+    public void showToast(View view) {
+        Toast toast = Toast.makeText(this, R.string.toast_message, Toast.LENGTH_SHORT);
+        toast.show();
+    }
 }
 
+
+//public class MainActivity extends AppCompatActivity {
+//
+//    private int mCount;
+//    private TextView mShowCount;
+//
+//
+//    @Override
+//    protected void onCreate(Bundle savedInstanceState) {
+//        super.onCreate(savedInstanceState);
+//        setContentView(R.layout.activity_main);
+//        mShowCount = (TextView) findViewById(R.id.show_count);
+//
+//    }
+//
+//    public void showToast(View view) {
+//        Toast toast = Toast.makeText(this, R.string.toast_message, Toast.LENGTH_SHORT);
+//        toast.show();
+//    }
+//
+//    public void countUp(View view) {
+//        mCount++;
+//        if (mShowCount != null)
+//            mShowCount.setText(Integer.toString(mCount));
+//    }
 //Create an Android Application that accepts words from a user, then forms a unique story for the user based on their input. For example:
 //
 //Enter Your Character's Name: Shannon
