@@ -1,0 +1,9 @@
+<resources>
+
+    <string name="app_name">STORY_HW</string>
+    <string name="button_toast">Next</string>
+    <string name="toast_message">woo</string>
+    <string name="edittext_uri">edittext1</string>
+    <string name="textview">What is your name?</string>
+
+</resources>
